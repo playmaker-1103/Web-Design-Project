@@ -2,18 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Travel Tip</title>
+    <title>Travel Tips for Vietnam</title>
     <link rel="stylesheet" href="./travel_tip.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="/home/home.html" >Home</a></li>
-            <li><a href="/culture_history/culture_history.html">Culture & History</a></li>
-            <li><a href="/thing_to_do/thing_to_do.html">Things to Do</a></li>
-            <li><a href="/cuisine/cuisine.html">Cuisine</a></li>
-            <li><a href="/travel_tip/travel_tip.html" class = "active">Travel Tips</a></li>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../home/home.html">Home</a></li>
+            <li><a href="../culture_history/culture_history.html">Culture & History</a></li>
+            <li><a href="../thing_to_do/thing_to_do.html">Things To Do</a></li>
+            <li><a href="../cuisine/cuisine.html">Cuisine</a></li>
+            <li><a href="travel_tip.html" class="active">Travel Tips</a></li>
+            <li><a href="../accommodation/accommodation.html">Where to Stay</a></li>
         </ul>
     </nav>
+
+    <main>
+        <h1>Travel Tips for Vietnam</h1>
+        <p>Planning a trip to Vietnam? Here are some essential tips to help you make the most of your journey through this beautiful country.</p>
+
+        <h2>Before You Go</h2>
+
+        <article class="site">
+            <img src="images/visa.jpg" alt="Visa Requirements">
+            <div class="content">
+                <h3>Visa Requirements</h3>
+                <p>Most visitors need a visa to enter Vietnam. You can apply for an e-visa online or get a visa on arrival. Make sure to check the latest requirements based on your nationality and the length of your stay.</p>
+                <p class="popular">Pro Tip: Apply for your visa at least 2 weeks before your trip to avoid any last-minute issues.</p>
+            </div>
+        </article>
+
+        <article class="site">
+            <img src="images/weather.jpg" alt="Best Time to Visit">
+            <div class="content">
+                <h3>Best Time to Visit</h3>
+                <p>Vietnam's climate varies by region. The best time to visit is generally from November to April when the weather is cooler and drier. However, each region has its own ideal visiting season.</p>
+                <p class="popular">Pro Tip: Pack for all weather conditions as you might experience different climates while traveling from north to south.</p>
+            </div>
+        </article>
+
+        <h2>Getting Around</h2>
+
+        <article class="site">
+            <img src="images/transport.jpg" alt="Transportation">
+            <div class="content">
+                <h3>Transportation</h3>
+                <p>Vietnam has various transportation options including domestic flights, trains, buses, and motorbikes. For longer distances, consider taking overnight trains or buses to save time and accommodation costs.</p>
+                <p class="popular">Pro Tip: Download the Grab app for reliable taxi and motorbike taxi services in major cities.</p>
+            </div>
+        </article>
+
+        <h2>Cultural Etiquette</h2>
+
+        <article class="site">
+            <img src="images/culture.jpg" alt="Cultural Etiquette">
+            <div class="content">
+                <h3>Local Customs</h3>
+                <p>Vietnamese culture places importance on respect and politeness. Learn a few basic Vietnamese phrases, dress modestly when visiting temples, and always ask permission before taking photos of locals.</p>
+                <p class="popular">Pro Tip: Remove your shoes before entering someone's home or a temple, and use both hands when giving or receiving items.</p>
+            </div>
+        </article>
+
+        <h2>Health & Safety</h2>
+
+        <article class="site">
+            <img src="images/health.jpg" alt="Health & Safety">
+            <div class="content">
+                <h3>Staying Healthy</h3>
+                <p>Drink bottled water, be cautious with street food, and consider getting travel insurance. Make sure your routine vaccinations are up to date and consider additional vaccinations like Hepatitis A and Typhoid.</p>
+                <p class="popular">Pro Tip: Carry hand sanitizer and wet wipes for situations where soap and water aren't available.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; Vietnam Travel Guide. All Rights Reserved.</p> 
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

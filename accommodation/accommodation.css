@@ -1,25 +1,26 @@
+/* === General Styles === */
 body {
-  font-family: 'Lato', Arial, sans-serif;
-  margin: 0;
+  font-family: 'Lato', Arial, sans-serif; 
+  margin: 0; 
 }
 
 /* === Navigation Styles === */
 nav {
-  background-color: #006400;
+  background-color: #006400; 
   padding: 10px 20px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: fixed; /* Make nav fixed */
+  width: 100%; /* Full width */
+  top: 0; /* Stick to top */
+  left: 0; /* Align to left */
+  z-index: 1000; /* Ensure nav stays on top of other content */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Add subtle shadow */
 }
 
 .nav-links {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: flex;
+  display: flex; 
   justify-content: center;
 }
 
@@ -30,7 +31,7 @@ nav {
 
 .nav-links li a {
   text-decoration: none;
-  color: white;
+  color: white; 
   font-size: 18px;
   padding: 10px 20px;
   border-radius: 5px;
@@ -38,13 +39,13 @@ nav {
 }
 
 .nav-links li a.active {
-  border-bottom: 2px solid #FFD700;
-  color: #FFD700;
+  border-bottom: 2px solid #FFD700; 
+  color: #FFD700; 
 }
 
 .nav-links li a:hover {
-  color: #FFD700;
-  border-bottom: 2px solid #FFD700;
+  color: #FFD700; 
+  border-bottom: 2px solid #FFD700; 
 }
 
 /* Hamburger Menu */
@@ -98,49 +99,47 @@ nav {
   }
 }
 
-/* Main Content */
+/* === Main Content Area (Basic) === */
 main {
-  padding: 80px 20px 20px 20px;
+  padding: 80px 20px 20px 20px; /* Top padding should be more than nav height */
 }
 
 main h1 {
-  font-size: 2.5rem;
-  color: #004d00;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-  margin-bottom: 25px;
+  font-size: 2.5rem; /* Increase font size */
+  color: #004d00; /* Darker green for emphasis */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Subtle shadow */
+  margin-bottom: 25px; /* Slightly more space below */
 }
 
-main > p:first-of-type {
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 35px;
-  line-height: 1.8;
+main p {
+  line-height: 1.6;
+  /* Add other paragraph styles if needed */
 }
 
-/* Footer */
+/* === Footer Styles === */
 footer {
-  background-color: #006400;
+  background-color: #006400; 
   color: white;
   text-align: center;
   padding: 20px 0;
-  margin-top: 40px;
+  margin-top: 40px; /* Add space above footer for content pages */
 }
 
 footer p {
   margin: 0;
 }
 
-/* === Cuisine Page Specific Styles === */
+/* === Accommodation Page Specific Styles === */
 
 /* Introduction */
 main > p:first-of-type {
-  font-size: 1.2rem;
+  font-size: 1.2rem; /* Slightly larger font size */
   color: #333;
-  margin-bottom: 35px;
-  line-height: 1.8;
+  margin-bottom: 35px; /* More space below */
+  line-height: 1.8; /* Increase line height for readability */
 }
 
-/* Dishes Section */
+/* Accommodation Section */
 main h2 {
   font-size: 2rem;
   color: #006400;
@@ -188,10 +187,10 @@ main h2 {
   font-size: 0.95rem;
   line-height: 1.5;
   color: #555;
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Reduce space under text */
 }
 
-/* Popular Section Styling */
+/* Pro Tip Section Styling */
 .site .popular {
   background-color: #f8f9fa;
   border-left: 4px solid #FFD700;
@@ -221,7 +220,5 @@ main h2 {
 }
 
 .site img:hover {
-  transform: scale(1.05);
-}
-  
-  
+  transform: scale(1.05); /* Slight zoom on hover */
+} 

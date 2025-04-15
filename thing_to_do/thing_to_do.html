@@ -2,18 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Thing To Do</title>
+    <title>Things to Do</title>
     <link rel="stylesheet" href="./thing_to_do.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="/home/home.html" ">Home</a></li>
-            <li><a href="/culture_history/culture_history.html">Culture & History</a></li>
-            <li><a href="/thing_to_do/thing_to_do.html" class = "active">Things to Do</a></li>
-            <li><a href="/cuisine/cuisine.html">Cuisine</a></li>
-            <li><a href="/travel_tip/travel_tip.html">Travel Tips</a></li>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../home/home.html">Home</a></li>
+            <li><a href="../culture_history/culture_history.html">Culture & History</a></li>
+            <li><a href="thing_to_do.html" class="active">Things To Do</a></li>
+            <li><a href="../cuisine/cuisine.html">Cuisine</a></li>
+            <li><a href="../travel_tip/travel_tip.html">Travel Tips</a></li>
+            <li><a href="../accommodation/accommodation.html">Where to Stay</a></li>
         </ul>
     </nav>
+
+    <main>
+        <h1>Things To Do In Vietnam</h1>
+        <p>Vietnam offers a diverse range of activities and experiences for every type of traveler. From exploring natural wonders to relaxing on pristine beaches, here are some must-do activities during your visit.</p>
+
+        <h2>Adventure Activities</h2>
+
+        <article class="site">
+            <img src="../images/son_doong.jpg" alt="Son Doong Cave">
+            <div class="content">
+                <h3>Explore Son Doong Cave</h3>
+                <p>Son Doong Cave, the world's largest cave, offers an unforgettable adventure. This massive cave system features its own ecosystem, including a jungle, river, and unique rock formations. Guided tours allow visitors to explore this natural wonder, with opportunities for camping inside the cave and witnessing its spectacular stalactites and stalagmites.</p>
+                <p class="popular">Why it's Popular: Son Doong Cave is a once-in-a-lifetime experience, offering a unique combination of adventure, natural beauty, and scientific wonder in one of the world's most spectacular cave systems.</p>
+            </div>
+        </article>
+
+        <article class="site">
+            <img src="../images/ba_na_hills.jpg" alt="Ba Na Hills">
+            <div class="content">
+                <h3>Visit Ba Na Hills</h3>
+                <p>Ba Na Hills is a hill station and resort located in the Truong Son Mountains. The highlight is the famous Golden Bridge held up by giant stone hands, offering stunning views of the surrounding mountains. Visitors can enjoy the cable car ride, French village, amusement park, and beautiful gardens. The cool climate and European-style architecture make it a unique destination in Vietnam.</p>
+                <p class="popular">Why it's Popular: Ba Na Hills combines natural beauty with man-made attractions, offering a unique blend of Vietnamese and European influences, making it perfect for families and photography enthusiasts.</p>
+            </div>
+        </article>
+
+        <h2>Beach Destinations</h2>
+
+        <article class="site">
+            <img src="../images/phuquoc.jpg" alt="Phu Quoc Island">
+            <div class="content">
+                <h3>Relax on Phu Quoc Island</h3>
+                <p>Phu Quoc Island offers pristine beaches, crystal-clear waters, and lush tropical landscapes. It's an ideal destination for relaxation, snorkeling, scuba diving, and visiting local night markets. You can also explore the island's waterfalls and nature reserves for an added adventure.</p>
+                <p class="popular">Why it's Popular: Phu Quoc is one of Vietnam's top beach destinations, combining beautiful coastal experiences with cultural and natural attractions.</p>
+            </div>
+        </article>
+
+        <h2>Cultural Experiences</h2>
+
+        <article class="site">
+            <img src="../images/mekong.jpg" alt="Mekong Delta">
+            <div class="content">
+                <h3>Take a Boat Ride in the Mekong Delta</h3>
+                <p>The Mekong Delta, often referred to as the "Rice Bowl" of Vietnam, is an area rich with rivers, floating markets, and traditional villages. A boat ride through the delta offers a unique perspective on local life, with opportunities to visit floating markets, interact with farmers, and explore lush landscapes.</p>
+                <p class="popular">Why it's Popular: The Mekong Delta provides an authentic, immersive experience in rural Vietnamese life, combining cultural insights with a serene natural environment.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; Vietnam Travel Guide. All Rights Reserved.</p> 
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

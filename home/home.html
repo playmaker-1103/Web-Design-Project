@@ -10,14 +10,27 @@
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="home.html" class = "active">Home</a></li>
-            <li><a href="/culture_history/culture_history.html">Culture & History</a></li>
-            <li><a href="/thing_to_do/thing_to_do.html">Things to Do</a></li>
-            <li><a href="/cuisine/cuisine.html">Cuisine</a></li>
-            <li><a href="/travel_tip/travel_tip.html">Travel Tips</a></li>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="../culture_history/culture_history.html">Culture & History</a></li>
+            <li><a href="../thing_to_do/thing_to_do.html">Things To Do</a></li>
+            <li><a href="../cuisine/cuisine.html">Cuisine</a></li>
+            <li><a href="../travel_tip/travel_tip.html">Travel Tips</a></li>
+            <li><a href="../accommodation/accommodation.html">Where to Stay</a></li>
         </ul>
     </nav>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+
     <section class="hero">
         <div class="hero-content">
             <h1>VIETNAM</h1>
@@ -33,31 +46,37 @@
                 <!-- <img src="/vietnam_culture.jpg" alt="Culture & History Preview"> --> 
                 <h3>🏛️ Culture & History</h3>
                 <p>Discover ancient traditions and historical landmarks.</p>
-                <a href="/culture_history/culture_history.html" class="preview-btn">Explore</a>
+                <a href="../culture_history/culture_history.html" class="preview-btn">Explore</a>
             </div>
             <div class="preview-box">
                 <!-- <img src="/vietnam_activities.jpg" alt="Things to Do Preview"> -->
                 <h3>🏞️ Things to Do</h3>
                 <p>From bustling cities to serene landscapes, find your adventure.</p>
-                <a href="/thing_to_do/thing_to_do.html" class="preview-btn">Explore</a>
+                <a href="../thing_to_do/thing_to_do.html" class="preview-btn">Explore</a>
             </div>
             <div class="preview-box">
                 <!-- <img src="/vietnam_cuisine.jpg" alt="Cuisine Preview"> -->
                 <h3>🍜 Cuisine</h3>
                 <p>Taste the vibrant flavors of Vietnamese food.</p>
-                <a href="/cuisine/cuisine.html" class="preview-btn">Explore</a>
+                <a href="../cuisine/cuisine.html" class="preview-btn">Explore</a>
             </div>
             <div class="preview-box">
                 <!-- <img src="/vietnam_travel_tips.jpg" alt="Travel Tips Preview"> -->
                 <h3>🗺️ Travel Tips</h3>
                 <p>Plan your trip with essential tips and advice.</p>
-                <a href="/travel_tip/travel_tip.html" class="preview-btn">Explore</a>
+                <a href="../travel_tip/travel_tip.html" class="preview-btn">Explore</a>
+            </div>
+            <div class="preview-box">
+                <!-- <img src="/vietnam_accommodation.jpg" alt="Where to Stay Preview"> -->
+                <h3>🏨 Where to Stay</h3>
+                <p>Find the perfect accommodation for your Vietnam adventure.</p>
+                <a href="../accommodation/accommodation.html" class="preview-btn">Explore</a>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; Vietname Travel Guide. All Rights Reserved.</p> 
+        <p>&copy; Vietnam Travel Guide. All Rights Reserved.</p> 
     </footer>
 
 </body>

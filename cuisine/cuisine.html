@@ -2,18 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cuisine</title>
+    <title>Vietnamese Cuisine</title>
     <link rel="stylesheet" href="./cuisine.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="/home/home.html" ">Home</a></li>
-            <li><a href="/culture_history/culture_history.html">Culture & History</a></li>
-            <li><a href="/thing_to_do/thing_to_do.html">Things to Do</a></li>
-            <li><a href="/cuisine/cuisine.html" class = "active">Cuisine</a></li>
-            <li><a href="/travel_tip/travel_tip.html">Travel Tips</a></li>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../home/home.html">Home</a></li>
+            <li><a href="../culture_history/culture_history.html">Culture & History</a></li>
+            <li><a href="../thing_to_do/thing_to_do.html">Things To Do</a></li>
+            <li><a href="cuisine.html" class="active">Cuisine</a></li>
+            <li><a href="../travel_tip/travel_tip.html">Travel Tips</a></li>
+            <li><a href="../accommodation/accommodation.html">Where to Stay</a></li>
         </ul>
     </nav>
+
+    <main>
+        <h1>Vietnamese Cuisine</h1>
+        <p>Vietnamese cuisine is known for its fresh ingredients, minimal use of oil, and reliance on herbs and vegetables. From street food to fine dining, here are some must-try dishes during your visit.</p>
+
+        <h2>Signature Dishes</h2>
+
+        <article class="site">
+            <img src="images/pho.jpg" alt="Pho">
+            <div class="content">
+                <h3>Pho</h3>
+                <p>Pho is Vietnam's national dish, a fragrant noodle soup made with beef or chicken broth, rice noodles, and fresh herbs. The broth is simmered for hours with spices like star anise, cinnamon, and ginger, creating a rich and aromatic base. Served with fresh herbs, lime, and chili, it's a perfect balance of flavors.</p>
+                <p class="popular">Why it's Popular: Pho is not just a dish, it's a cultural icon that represents Vietnamese cuisine worldwide. Its comforting flavors and customizable nature make it appealing to everyone.</p>
+            </div>
+        </article>
+
+        <article class="site">
+            <img src="images/banh_mi.jpg" alt="Banh Mi">
+            <div class="content">
+                <h3>Banh Mi</h3>
+                <p>Banh Mi is a Vietnamese sandwich that perfectly combines French and Vietnamese culinary traditions. A crispy baguette is filled with various ingredients like grilled pork, pate, pickled vegetables, fresh herbs, and chili sauce. The result is a perfect balance of textures and flavors in every bite.</p>
+                <p class="popular">Why it's Popular: Banh Mi represents the fusion of Vietnamese and French cultures, offering a quick, delicious, and affordable meal that's perfect for any time of day.</p>
+            </div>
+        </article>
+
+        <h2>Street Food Favorites</h2>
+
+        <article class="site">
+            <img src="images/bun_cha.jpg" alt="Bun Cha">
+            <div class="content">
+                <h3>Bun Cha</h3>
+                <p>Bun Cha is a Hanoi specialty featuring grilled pork patties and slices served with rice noodles, fresh herbs, and a sweet and sour dipping sauce. The dish gained international fame when former US President Barack Obama tried it with Anthony Bourdain.</p>
+                <p class="popular">Why it's Popular: Bun Cha offers a perfect combination of grilled meat, fresh herbs, and noodles, creating a satisfying and flavorful meal that's both light and filling.</p>
+            </div>
+        </article>
+
+        <h2>Regional Specialties</h2>
+
+        <article class="site">
+            <img src="images/cao_lau.jpg" alt="Cao Lau">
+            <div class="content">
+                <h3>Cao Lau</h3>
+                <p>Cao Lau is a Hoi An specialty featuring thick rice noodles, slices of barbecued pork, fresh herbs, and crispy rice crackers. The noodles are unique to Hoi An, made with water from a specific well in the town. The dish is a perfect representation of Hoi An's culinary heritage.</p>
+                <p class="popular">Why it's Popular: Cao Lau is a dish you can only find in Hoi An, making it a must-try for visitors. Its unique preparation and local ingredients tell the story of the town's history and culture.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; Vietnam Travel Guide. All Rights Reserved.</p> 
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
