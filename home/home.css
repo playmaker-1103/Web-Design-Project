@@ -1,6 +1,6 @@
 body {
-  font-family: 'Lato', Arial, sans-serif; /* Set base font */
-  margin: 0; /* Good practice to reset default body margin */
+  font-family: 'Lato', Arial, sans-serif;
+  margin: 0;
 }
 
 nav {
@@ -12,7 +12,6 @@ nav {
   left: 0;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  box-sizing: border-box;
 }
 
 .nav-links {
@@ -122,7 +121,8 @@ nav {
 
 .hero h1 {
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
+  margin-top: 20px;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added text shadow */
 }
@@ -150,7 +150,7 @@ nav {
 .previews {
   padding: 40px 20px;
   text-align: center;
-  background-color: #f0f0f0; /* Added light grey background */
+  background-color: #f0f0f0;
 }
 
 .previews h2 {
@@ -166,16 +166,16 @@ nav {
 }
 
 .preview-box {
-  flex: 1 1 250px; /* Flex basis: allow growth, prevent shrinking below 250px */
-  max-width: 300px; /* Optional: limit max width */
+  flex: 1 1 250px;
+  max-width: 300px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 15px 20px 20px 20px; /* Adjusted padding */
+  padding: 15px 20px 20px 20px;
   text-align: center;
-  background-color: #ffffff; /* Changed background to white */
+  background-color: #ffffff;
   margin-bottom: 20px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .preview-box:hover { /* Added hover effect */
@@ -185,7 +185,7 @@ nav {
 
 .preview-box h3 {
   margin-top: 0;
-  margin-bottom: 15px; /* Increased margin */
+  margin-bottom: 15px;
   font-size: 1.5rem;
   font-weight: 700; /* Make heading bolder */
 }
@@ -195,7 +195,7 @@ nav {
   margin-bottom: 20px; /* Increased margin */
   color: #555;
   font-weight: 400; /* Explicitly set regular weight */
-  line-height: 1.5; /* Improved line spacing */
+  line-height: 1.5; 
 }
 
 .preview-btn {
